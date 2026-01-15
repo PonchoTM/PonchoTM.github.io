@@ -1,0 +1,478 @@
+/*CSS general**/
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    z-index: 1000;
+}
+
+
+body{
+    background-color: #222;
+    color: aliceblue;
+    font: 200 14px "Poppins", sans-serif;
+    
+}
+h2{
+    font-size: 36px;
+    line-height: 36px;
+}
+
+p{
+    text-align: justify;
+}
+
+cite{
+    font-weight: 300;
+}
+i{
+    font-size: 24px;
+}
+i:hover{
+    color: #13db23;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:any-link{
+    color: white;
+}
+
+a:-webkit-any-link{
+    color: white;
+}
+
+a:-moz-any-link{
+    color: white;
+}
+
+
+a:hover{
+    color:#13db23
+}
+
+ul{
+    list-style: none;
+}
+
+
+li{
+    float:left;
+    margin-right: 15px;
+}
+
+button{
+    border-radius: 10px;
+}
+
+h3{
+    color: #999;
+    font-size: 18px;
+}
+
+nav{
+    position:fixed;
+    width: 100%;
+    height: 55px;
+    top: 0;
+    background-color: #222;
+    border-bottom: 1px solid white;
+    text-align: center;
+
+}
+nav ul{
+    display: inline-block;
+}
+
+nav ul li{
+    padding-top: 0px;
+    top: 0;
+}
+
+section{
+    padding: 10px 100px 10px 100px;
+}
+
+/*CSS clase**/
+.hashtag{
+    color:aliceblue
+
+}
+.seccion{
+    padding: 10px 100px 10px 100px;
+}
+#liImg{
+    padding: 0px
+}
+
+#logo{
+    padding-top: 0px;
+}
+
+#redessociales{
+    margin-top: 20px;
+    
+}
+
+#inicio{
+    background-image: url("../recursos/images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    min-height: 280px;
+    padding-top: 75px;
+}
+
+#inicio h2{
+    padding-top: 60px;
+    font-size: 58px;
+    line-height: 28px;
+    font-family:"Bebas Neue", sans-serif;
+    color: #13db23;
+}
+
+#Nosotros {
+    padding: 50px 0; /* Espaciado superior e inferior de la sección */
+}
+
+
+#imagenNosotros {
+    display: flex; 
+    align-items: center; 
+    padding: 0 5%; 
+    gap: 40px; 
+}
+
+
+#contactar{
+    background-color: #13db23;
+}
+
+#contactar h3{
+    color: #111;
+}
+
+#planes{
+    border-top: 1px solid #13db23;
+}
+
+
+.masinfo button{
+    background-color: #13db23;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+/*Grid tuespacio*/
+#tuespacio{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+#tuespacio .masinfo{
+    margin-top: 15px
+}
+
+#tuespacio .masinfo button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*Card portafolio*/
+
+.filaportafolio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card{
+    width: 250px;
+    background-color: #191919;
+    border-radius: 15px;
+}
+
+.card img{
+    border-radius: 15px;
+}
+
+.car h3{
+    color: #13db23;
+}
+
+.card h4{
+    margin: 0 5px 5px 0;
+}
+
+.card h3, .card h4, .card p, .card .masinfo{
+    padding: 0 15px;
+}
+
+.card .masinfo{
+    display: flex;
+    padding: 0 15px 15px;
+}
+
+.card .sep{
+    margin: 0px 10px 10px 10px;
+    border: 1px solid #13db23 ;
+
+}
+
+.card .masinfo button{
+    width: 100%;
+    float: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card .beneficio {
+    padding: 0 !important;
+}
+
+
+.card .ibeneficio{
+    text-align: left;
+    padding: 0 15px 15px;
+}
+
+.card .ibeneficio p {
+    text-align: left !important;  /* ← clave */
+    white-space: normal;
+}
+
+.card-info {
+    min-height: 190px; /* ajusta al texto más largo */
+}
+
+
+/*Section beneficios*/
+
+.ibeneficio {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;  /* icono arriba alineado con texto */
+    gap: 10px;
+}
+
+.beneficio i {
+    min-width: 22px;
+    text-align: center;
+    color: #13db23;
+}
+
+.beneficio p {
+    margin: 0;
+    flex: 1;
+    font-size: 14;
+}
+
+
+
+.gridexp{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    align-content: space-around;
+    justify-content:space-between;
+}
+
+.cardexp{
+    background-color: #222;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 15px;
+}
+
+.cardexp img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 10px;
+}
+
+.cardexp h2{
+    margin-bottom: 5px;
+}
+
+.cardexp h3{
+    margin-bottom: 20px
+}
+
+.cardexp p{
+    margin-bottom: 20px;
+}
+
+.cardexp ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cardexp li{
+    height: 30px;
+}
+
+.gridVideo{
+    display: flex;
+    justify-content: center;   /* centra horizontal */
+    align-items: center;       /* centra vertical */
+    margin-top: 30px;
+}
+
+.gridVideo video{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 15px;
+    outline: none;
+}
+
+.gridVideo .cardv{
+    background-color: #191919;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+}
+
+.gridVideo .cardv:hover{
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px){
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .footer-redes{
+        justify-content: center;
+    }
+}
+
+
+
+
+/*formulario*/
+#contactar h2{
+    color: #222;
+}
+
+.itemform{
+    display: grid;
+    grid-template-columns: 150px 350px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.itemform label{
+    font-weight: 700;
+    color: #222;
+}
+
+.itemform input, .itemform textarea{
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+input[type= "submit"]{
+    background-color: #222;
+    color: white;
+    padding: 10px;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+input:hover{
+    color: #13db23;
+    cursor: pointer;
+}
+
+/* ===== FOOTER ===== */
+
+#footer{
+    background-color: #111;
+    color: #999;
+    margin-top: 50px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px 100px;
+}
+
+.footer-col h3{
+    color: #13db23;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-col p{
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-col ul{
+    padding: 0;
+}
+
+.footer-col ul li{
+    float: none;
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a{
+    color: #999;
+    font-size: 14px;
+}
+
+.footer-col ul li a:hover{
+    color: #13db23;
+}
+
+/* Redes sociales */
+.footer-redes{
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes i{
+    font-size: 22px;
+    color: #999;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-redes i:hover{
+    color: #13db23;
+    transform: scale(1.2);
+}
+
+/* Línea inferior */
+.footer-copy{
+    border-top: 1px solid #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #666;
+}
